@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS alphabet game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key" id="B" style="background-image: url('images/a.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">A</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="83" class="key" style="background-image: url('images/s.png'); background-size: cover;">
+      <kbd  style="opacity: 0;">S</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="68" class="key" style="background-image: url('images/d.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">D</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="70" class="key" style="background-image: url('images/f.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">F</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="71" class="key"  style="background-image: url('images/g.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">G</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="72" class="key"  style="background-image: url('images/h.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">H</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="74" class="key"  style="background-image: url('images/j.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">J</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="75" class="key" style="background-image: url('images/k.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">K</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="76" class="key" style="background-image: url('images/l.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">L</kbd>
+      <span class="sound"></span>
+    </div>
+    <!--  -->
+    <div data-key="90" class="key" style="background-image: url('images/z.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">Z</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="88" class="key" style="background-image: url('images/x.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">X</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="67" class="key" style="background-image: url('images/c.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">C</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="86" class="key" style="background-image: url('images/v.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">V</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="66" class="key"  style="background-image: url('images/b.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">B</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="78" class="key" style="background-image: url('images/n.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">N</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="77" class="key" style="background-image: url('images/m.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">M</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="81" class="key" style="background-image: url('images/q.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">Q</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="87" class="key" style="background-image: url('images/w.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">W</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="69" class="key" style="background-image: url('images/e.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">E</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="82" class="key" style="background-image: url('images/r.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">R</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="84" class="key"  style="background-image: url('images/t.jpg'); background-size: cover;">
+      <kbd style="opacity: 0;">T</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="76" class="key" style="background-image: url('images/y.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">Y</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="85" class="key"  style="background-image: url('images/u.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">U</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="73" class="key" style="background-image: url('images/i.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">I</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="79" class="key" style="background-image: url('images/o.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">O</kbd>
+      <span class="sound"></span>
+    </div>
+    <div data-key="80" class="key" style="background-image: url('images/p.jpg'); background-size: cover;">
+      <kbd  style="opacity: 0;">P</kbd>
+      <span class="sound"></span>
+    </div>
+    
+  </div>
+
+  <audio data-key="65" src="sounds/a.mp3"></audio>
+  <audio data-key="83" src="sounds/s.mp3"></audio>
+  <audio data-key="68" src="sounds/d.mp3"></audio>
+  <audio data-key="70" src="sounds/f.mp3"></audio>
+  <audio data-key="71" src="sounds/g.mp3"></audio>
+  <audio data-key="72" src="sounds/h.mp3"></audio>
+  <audio data-key="74" src="sounds/j.mp3"></audio>
+  <audio data-key="75" src="sounds/k.mp3"></audio>
+  <audio data-key="76" src="sounds/l.mp3"></audio>
+  <audio data-key="90" src="sounds/z.mp3"></audio>
+  <audio data-key="88" src="sounds/x.mp3"></audio>
+  <audio data-key="67" src="sounds/c.mp3"></audio>
+  <audio data-key="86" src="sounds/v.mp3"></audio>
+  <audio data-key="66" src="sounds/b.mp3"></audio>
+  <audio data-key="78" src="sounds/n.mp3"></audio>
+  <audio data-key="77" src="sounds/m.mp3"></audio>
+  <audio data-key="81" src="sounds/q.mp3"></audio>
+  <audio data-key="87" src="sounds/w.mp3"></audio>
+  <audio data-key="69" src="sounds/e.mp3"></audio>
+  <audio data-key="82" src="sounds/r.mp3"></audio>
+  <audio data-key="84" src="sounds/t.mp3"></audio>
+  <audio data-key="89" src="sounds/y.mp3"></audio>
+  <audio data-key="85" src="sounds/u.mp3"></audio>
+  <audio data-key="73" src="sounds/i.mp3"></audio>
+  <audio data-key="79" src="sounds/o.mp3"></audio>
+  <audio data-key="80" src="sounds/p.mp3"></audio>
+
+<script>
+
+function playsound(e) {
+  const audio=document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key=document.querySelector(`.key[data-key="${e.keyCode}"]`);
+// const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  if(!audio) return; //stop the function from running
+  audio.currentTime = 0;
+  audio.play();
+  key.classList.add('playing');
+  // console.log(key);
+  // document.getElementById('A').style.display="inline";
+  key.getElementsByTagName('kbd')[0].style.transition="opacity, 2s";
+  key.getElementsByTagName('kbd')[0].style.opacity="1";
+ 
+ 
+}
+function removeTransition(e){
+  if (e.propertyName !== 'transform') return;//skip it if it is not transform
+  // console.log(e.propertyName);
+  this.classList.remove('playing');
+  
+}
+const keys= document.querySelectorAll('.key');
+// console.log(keys);
+keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+window.addEventListener('keydown',playsound)
+
+</script>
+
+
+</body>
+</html>
